@@ -1,2 +1,2 @@
-bip32utils==0.3.post4
+bit==0.8.0
 Requests==2.32.3
