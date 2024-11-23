@@ -30,7 +30,7 @@ def generate_address(prefix):
 
 if __name__ == '__main__':
     console = Console()
-    prefix = '192zWf1b9V'  # Desired prefix
+    prefix = '1K3wNmPxqc'  # Desired prefix
     num_processes = multiprocessing.cpu_count() * 4  # Number of CPU cores
 
     # Create processes
