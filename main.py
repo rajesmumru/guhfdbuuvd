@@ -12,7 +12,7 @@ def generate_address(prefix):
     total = 0
     while True:  
         low  = 0x40000000000000000
-        high = 0x400000000000fffff
+        high = 0x4000000000000ffff
         val = str(hex(random.randrange(low, high)))[2:]
         result = val.rjust(48 + len(val), '0')
         priv = result
